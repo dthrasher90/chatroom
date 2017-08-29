@@ -1,0 +1,35 @@
+body{
+	background-color: steelblue;
+	margin: 0 auto;
+
+}
+.wrapper{
+	border: 3px solid black;
+}
+.clientWrapper{
+	width: 100px;
+	height: 300px;
+	border: 5px solid orange;
+
+}
+
+.input-group{
+	height: 30px;
+	width: 410px;
+	margin-left: 180px;
+}
+
+#messages{
+	height:400px;
+	width: 500px;
+	background-color: ghostwhite;
+	margin: 0 auto;
+}
+
+.onlineWrapper{
+	height: 200px;
+	width: 100px;
+	border: 3px solid red;
+	margin-left: 100px;
+
+}

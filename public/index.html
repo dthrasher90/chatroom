@@ -1,18 +1,52 @@
 <!doctype html>
 <title>Chatroom</title>
-<meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <!-- JS -->
+    <script src="//code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
 
-<!-- JS -->
-<script src="//code.jquery.com/jquery-2.1.0.js"></script>
-<script src="/socket.io/socket.io.js"></script>
-<script src="main.js"></script>
+</head>
 
-<div id="nickName" style="height: 50px; font-weight: bold;"></div>
-<div>To send private message, type pm|{nickname}|{message}</div>
-<div id="clientCount"></div>
-<div id="clientList">
-    <ul></ul>
-</div>
-<div id="userTyping" style="height: 100px"></div>
-<input type="text">
-<div id="messages"></div>
+
+<html>
+<body>
+    <div class="containern wrapper">
+        <div class="row">
+            <div class="d-flex flex-row">
+                <div class="p-2 col-md-9">
+                    <div id="messages"></div>
+                    <div id="userTyping" style="height: 25px; width: 100px;">
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="input-group">
+                            <input type="text" class=" form-control" placeholder="Start Chat...">
+                        </div>
+                        <!-- input class="inputBox" type="text"> -->
+                    </div>
+                </div>
+                <div class="p-2 col-md-3 onlineWrapper">
+                    <div id="clientCount">
+                    </div>
+                    <h3>Online</h3>
+                    <div id="clientList">
+                        <ul></ul>
+                    </div>
+                    <div id="nickName" style="height: 50px; font-weight: bold;">
+                    <!--     <div>
+                            <h3>Send PM </h3> To send private message, type pm|{nickname}|{message}
+                        </div>
+ -->                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
