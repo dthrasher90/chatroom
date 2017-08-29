@@ -1,10 +1,31 @@
 body{
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+	min-width: 100vh;
 	background-color: steelblue;
-	margin: 0 auto;
+	display: inline-flex;
+
+	
 
 }
 .wrapper{
 	border: 3px solid black;
+}
+
+.container1{
+	height: 500px;
+	width: 850px;
+	border: 3px solid gold;
+	display: inline-flex;
+}
+
+.onlineWrapper{
+	height: 200px;
+	width: 100px;
+	border: 3px solid red;
+
+
 }
 .clientWrapper{
 	width: 100px;
@@ -13,10 +34,10 @@ body{
 
 }
 
-.input-group{
+.input{
 	height: 30px;
 	width: 410px;
-	margin-left: 180px;
+	/*margin-left: 180px;*/
 }
 
 #messages{
@@ -26,10 +47,3 @@ body{
 	margin: 0 auto;
 }
 
-.onlineWrapper{
-	height: 200px;
-	width: 100px;
-	border: 3px solid red;
-	margin-left: 100px;
-
-}
